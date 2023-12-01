@@ -1,0 +1,173 @@
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    color: white;
+}
+
+.header {
+    background-image: url("images/sailboats.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-bottom-left-radius: 15%;
+    border-bottom-right-radius: 15%;
+    min-height: 500px;
+}
+
+.navbar-nav .nav-link.active {
+    font-weight: bold;
+}
+
+.home-btn {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    background: #2e2e2e; 
+    color: #fefefe;
+    border: 5px solid lightblue;
+}
+
+.home-btn:hover {
+    background: lightblue; 
+    color: #2e2e2e;
+    border: 5px solid #2e2e2e;
+}
+
+.home-buttons {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    place-items: center;
+    margin: 2%;
+}
+
+.first {
+    grid-row-end: 1;
+}
+
+.second {
+    grid-column-start: 2;
+    grid-row-end: 2;
+}
+
+.third {
+    grid-column-start: 3;
+    grid-row-end: 3;
+}
+
+.fourth {
+    grid-column-start: 4;
+    grid-row-end: 4;
+}
+
+.home-text {
+    line-height: 2;
+    padding: 5%;
+    font-size: 1.1rem;
+}
+
+.home-image {
+    width: 100%;
+    border-top-left-radius: 15%;
+    border-top-right-radius: 15%;
+    margin-top: 2%;
+}
+
+.grid-2 {
+    margin: 2%;
+    padding: 1%;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(2, minmax(0px, 1fr));
+    grid-template-rows: repeat (auto-fit, minmax(auto, 1fr));
+}
+
+.grid-4 {
+    margin: 2%;
+    padding: 1%;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-template-rows: repeat (auto-fit, minmax(auto, 1fr));
+}
+
+.button-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    place-items: center;
+}
+
+.departments {
+    background-color: lightblue;
+    border: 5px solid #2e2e2e;
+}
+
+.heading {
+    background-color: white;
+    width: 75%;
+    margin: 0 auto;
+    margin-top: 5%;
+    padding: 2%;
+}
+
+.services-banner {
+    background: lightblue;
+    padding: 2%;
+}
+
+.banner {
+    display: block;
+}
+
+@media screen and (max-width: 650px) {
+    .navbar-toggler {
+        margin: 5% auto;
+    }
+
+    .nav-link {
+        color: white;
+    }
+
+    .navbar-nav .nav-link.active {
+        color: white;
+    }
+
+    .home-buttons {
+        display: block;
+        text-align: center;
+    }
+
+    .home-btn {
+        margin: 2%;
+    }
+
+    .button-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+}
+
+@media screen and (max-width: 1000px) {
+
+    .grid-2 {
+        grid-template-columns: 1fr;
+    }
+
+    .button-grid a {
+        margin-top: 2%;
+    }
+
+    .grid-4 {
+        grid-template-columns: 1fr 1fr;
+    }
+    
+    .services {
+        grid-template-columns: 1fr;
+    }
+}
