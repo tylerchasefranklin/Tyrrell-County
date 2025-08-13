@@ -2,242 +2,174 @@
 Name: Tyler Franklin
 File: services.html
 Date: 11/30/23
+Updated: 2025 - Modern design matching index.html
 -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
-    <link rel="stylesheet" href="../styles.css">
-    <title>Tyrell County North Carolina</title>
+  <meta charset="UTF-8">
+  <title>Services - Tyrrell County</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Tyrrell County services, resources, and documents for residents and businesses.">
+  <meta property="og:title" content="Services - Tyrrell County">
+  <meta property="og:description" content="Tyrrell County services, resources, and documents for residents and businesses.">
+  <meta property="og:image" content="../images/og-image.jpg">
+  <meta name="theme-color" content="#205081">
+  <link rel="icon" href="../favicon.ico" sizes="any">
+  <link rel="icon" href="../favicon.png" type="image/png">
+  <link rel="stylesheet" href="../styles.css">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 </head>
 <body>
+  <a class="skip-link" href="#main">Skip to content</a>
 
-    <!-- header -->
-    <header class="header header-payments shadow-lg">
-        <nav class="navbar navbar-expand-lg">
-            <div class="container-fluid">
-              <a href="../index.html"><img class="img-fluid rounded" src="../images/banner(small).png" alt="Tyrrell County Seal"></a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                  <li class="nav-item">
-                    <a class="nav-link" aria-current="page" href="../index.html">Home</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="payments.html">Payments</a>
-                  </li>
-                  <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      Public Information
-                    </a>
-                    <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" href="departments.html">Departments</a></li>
-                      <li><a class="dropdown-item" href="records.html">Records</a></li>
-                    </ul>
-                  </li>
-                  <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle active b" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      Resources
-                    </a>
-                    <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" href="forms.html">Forms</a></li>
-                      <li><a class="dropdown-item active b" href="#">Services</a></li>
-                    </ul>
-                  </li>
-                </ul>
-                <form class="d-flex" role="search">
-                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                  <button class="btn btn-outline-light" type="submit">Search</button>
-                </form>
-              </div>
-            </div>
-          </nav> 
+  <header class="header">
+    <div class="container header-flex">
+      <img src="../images/logo.png" alt="Tyrrell County Logo" class="site-logo" width="64" height="64">
+      <h1>Tyrrell County</h1>
+      <nav id="main-nav" class="main-nav" aria-label="Main navigation">
+        <button class="menu-toggle" aria-label="Open navigation menu" aria-controls="main-nav-list" aria-expanded="false">
+          <span class="hamburger"></span>
+        </button>
+        <ul id="main-nav-list" class="nav-list" tabindex="-1">
+          <li><a href="../index.html" class="nav-link">Home</a></li>
+          <li><a href="services.html" class="nav-link" aria-current="page">Services</a></li>
+          <li><a href="departments.html" class="nav-link">Departments</a></li>
+          <li><a href="payments.html" class="nav-link">Payments</a></li>
+          <li><a href="forms.html" class="nav-link">Forms</a></li>
+          <li><a href="records.html" class="nav-link">Records</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
-          <div class="heading rounded">
-            <h4 class="text-center m-4">Tyrrell County has a lot of resources for it's citizens and a number of services to aid the public.</h4>
-          </div>
-          
+  <main id="main" class="container" tabindex="-1">
+    <section class="home-text fade-in" aria-labelledby="services-intro">
+      <h2 id="services-intro">County Services & Resources</h2>
+      <p>
+        Tyrrell County has a lot of resources for its citizens and a number of services to aid the public.
+      </p>
+    </section>
 
-          
-    </header>
-
-    <!-- Main Content -->
-    <main>
-
-      <h4 class="text-center m-4">Tyrrell County Resources</h4>
-      <section class="grid-4 shadow-lg rounded services">
-
-        <div class="card">
-          <div class="card-body">
-            <h5 class="card-title">Bids and Proposal</h5>
-            <h6 class="card-subtitle mb-2 text-body-secondary">Monitoring and Recovery Services RFP</h6>
-            <p class="card-text">Click the button below to download the county's proposal for debris monitoring services</p>
-          </div>
-          <ul class="list-group list-group-flush">
-            <li class="list-group-item"><a href="http://dl.agd.cc/TyrrellWeb/DebrisRFP.docx" class="btn btn-primary">Download</a></li>
-          </ul>
+    <section class="fade-in card" aria-labelledby="resources-header">
+      <h2 id="resources-header">Tyrrell County Resources</h2>
+      <div class="home-buttons">
+        <div class="home-btn-wrapper">
+          <a href="http://dl.agd.cc/TyrrellWeb/DebrisRFP.docx" class="home-btn btn">
+            <i class="fa-solid fa-file-contract"></i>
+            <span>Bids & Proposals</span>
+          </a>
         </div>
-
-        <div class="card">
-          <div class="card-body">
-            <h5 class="card-title">Personnel Policy Manual </h5>
-            <p class="card-text">The personnel policy establishes a system of personnel administration for Tyrrell County that provides a program to recruit, select, employ, develop and maintain an effective an effective and responsible work force.This policy also covers condition of employment, employe benefits, work rules, grievance procedures, position classification and pay administrator. To know more about personnel policies of Tyrrell County, download following Personnel Policy Manual:</p>
-          </div>
-          <ul class="list-group list-group-flush">
-            <li class="list-group-item"><a href="http://tyrrellcounty.org/images/attachment/General%20Requirements%20for%20Permit.pdf" class="btn btn-warning">Download</a></li>
-          </ul>
+        <div class="home-btn-wrapper">
+          <a href="http://tyrrellcounty.org/images/attachment/General%20Requirements%20for%20Permit.pdf" class="home-btn btn">
+            <i class="fa-solid fa-file-text"></i>
+            <span>Personnel Policy</span>
+          </a>
         </div>
-
-        <div class="card">
-          <div class="card-body">
-            <h5 class="card-title">Property Revaluation Information</h5>
-            <p class="card-text">Click below to download Tyrrell County's Property Revaluation Information</p>
-          </div>
-          <ul class="list-group list-group-flush">
-            <li class="list-group-item"><a href="http://dl.agd.cc/TyrrellWeb/solidwasteplan.pdf" class="btn btn-success">Download</a></li>
-          </ul>
+        <div class="home-btn-wrapper">
+          <a href="http://dl.agd.cc/TyrrellWeb/solidwasteplan.pdf" class="home-btn btn">
+            <i class="fa-solid fa-home"></i>
+            <span>Property Info</span>
+          </a>
         </div>
-
-        <div class="card">
-          <div class="card-body">
-            <h5 class="card-title">Citizen's Guide to Emergency Preparedness</h5>
-            <p class="card-text">Click below to view Tyrrell County's Citizen's Guide to Emergency Preparedness</p>
-          </div>
-          <ul class="list-group list-group-flush">
-            <li class="list-group-item"><a href="https://dl.agd.cc/TyrrellWeb/20190315110632.pdf" class="btn btn-info">Download</a></li>
-          </ul>
+        <div class="home-btn-wrapper">
+          <a href="https://dl.agd.cc/TyrrellWeb/20190315110632.pdf" class="home-btn btn">
+            <i class="fa-solid fa-shield-alt"></i>
+            <span>Emergency Guide</span>
+          </a>
         </div>
+      </div>
+    </section>
 
-      </section>
-
-      <div class="services-banner">
-        <img class="img-fluid m-auto banner rounded" src="../images/3.jpg" alt="Tyrrell County Town Hall">
+    <section class="fade-in card" aria-labelledby="detailed-resources">
+      <h3 id="detailed-resources">Resource Details</h3>
+      
+      <div class="card">
+        <h4>Bids and Proposal</h4>
+        <h5>Monitoring and Recovery Services RFP</h5>
+        <p>Click the button below to download the county's proposal for debris monitoring services</p>
+        <a href="http://dl.agd.cc/TyrrellWeb/DebrisRFP.docx" class="btn">
+          <i class="fa-solid fa-download"></i>
+          <span>Download</span>
+        </a>
       </div>
 
-
-      <h4 class="text-center m-4">Tyrrell County Services</h4>
-      <section class="grid-4 shadow-lg rounded services">
-
-        <div class="card">
-          <div class="card-body">
-            <h5 class="card-title">Register of Deeds</h5>
-            <p class="card-text">Click the button below to view the website for Tyrrell County's Register of Deeds</p>
-          </div>
-          <ul class="list-group list-group-flush">
-            <li class="list-group-item"><a href="http://www.tyrrellrod.net/" class="btn btn-primary">Go</a></li>
-          </ul>
-        </div>
-
-        <div class="card">
-          <div class="card-body">
-            <h5 class="card-title">Personnel Policy Manual </h5>
-            <p class="card-text">The personnel policy establishes a system of personnel administration for Tyrrell County that provides a program to recruit, select, employ, develop and maintain an effective an effective and responsible work force.This policy also covers condition of employment, employe benefits, work rules, grievance procedures, position classification and pay administrator. To know more about personnel policies of Tyrrell County, download following Personnel Policy Manual:</p>
-          </div>
-          <ul class="list-group list-group-flush">
-            <li class="list-group-item"><a href="http://tyrrellcounty.org/images/attachment/General%20Requirements%20for%20Permit.pdf" class="btn btn-warning">Download</a></li>
-          </ul>
-        </div>
-
-        <div class="card">
-          <div class="card-body">
-            <h5 class="card-title">Solid Waste Management</h5>
-            <h6 class="card-subtitle mb-2 text-body-secondary">Solid Waste Management Program</h6>
-            <p class="card-text">Click below to view Tyrrell County's Waste Management Program and the Recycling Collection Schedule</p>
-          </div>
-          <ul class="list-group list-group-flush">
-            <li class="list-group-item"><a href="http://dl.agd.cc/TyrrellWeb/solidwasteplan.pdf" class="btn btn-success">SWM Program</a></li>
-            <li class="list-group-item"><a href="http://dl.agd.cc/TyrrellWeb/2022recyclingschedule.pdf" class="btn btn-success">RCS</a></li>
-          </ul>
-        </div>
-
-        <div class="card">
-          <div class="card-body">
-            <h5 class="card-title">Citizen's Guide to Emergency Preparedness</h5>
-            <p class="card-text">Click below to view Tyrrell County's Citizen's Guide to Emergency Preparedness</p>
-          </div>
-          <ul class="list-group list-group-flush">
-            <li class="list-group-item"><a href="https://dl.agd.cc/TyrrellWeb/20190315110632.pdf" class="btn btn-info">Download</a></li>
-          </ul>
-        </div>
-
-      </section>
-
-      <section>
-        <img class="home-image" src="../images/spring.jpg" alt="Tyrrell County Offices">
-      </section>
-    </main>
-
-    
-    <!-- footer -->
-    
-    <footer class="text-center text-lg-start bg-dark">
-
-      <!-- Social media -->
-      <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
-        <div class="me-5 d-none d-lg-block">
-          <h5 class="fw-bold">Stay Connected:</h5>
-        </div>
-
-        <div>
-          <a class="btn text-white btn-floating m-1" style="background-color: #3b5998;" href="http://www.facebook.com/sharer.php?u=http://tyrrellcounty.org/en/&title=Home" role="button"><i class="bi bi-facebook"></i></a>
-          <a class="btn text-white btn-floating m-1" style="background-color: #000000;" href="http://twitter.com/home?status=http://tyrrellcounty.org/en/&title=Home" role="button"><i class="bi bi-twitter-x"></i></a>
-          <a class="btn text-white btn-floating m-1" style="background-color: #dd4b39;" href="http://www.google.com/bookmarks/mark?op=edit&bkmk=http://tyrrellcounty.org/en/&title=" role="button"><i class="bi bi-google"></i></a>
-          <a class="btn text-white btn-floating m-1" style="background-color: #0082ca;" href="http://www.linkedin.com/shareArticle?mini=true&url=http://tyrrellcounty.org/en/&summary=%5B..%5D&source=" role="button"><i class="bi bi-linkedin"></i></a>
-        </div>
-
-      </section>
-
-      <!-- Links and Contact -->
-      <section>
-        <div class="container text-center text-md-start mt-5">
-          <div class="row mt-3">
-
-            <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
-              <h6 class="text-uppercase fw-bold mb-4">Tyrell County</h6>
-              <p>...nature's buffer zone, sprawled between the urban mainland and the popular stretch of North Carolina's Outer Banks</p>
-            </div>
-
-            <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
-              <h6 class="text-uppercase fw-bold mb-4"><a class="nav-link" href="../index.html">Home</a></h6>
-              <p><a href="payments.html" class="text-reset">Payments</a></p>
-              <p><a href="departments.html" class="text-reset">Departments</a></p>
-              <p><a href="records.html" class="text-reset">Records</a></p>
-              <p><a href="forms.html" class="text-reset">Forms</a></p>
-              <p><a href="#" class="text-reset">Services</a></p>
-            </div>
-            
-            <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
-              <h6 class="text-uppercase fw-bold mb-4">Useful links</h6>
-              <p><a href="https://www.ncworks.gov/vosnet/default.aspx" target="_blank" class="text-reset">NC Works</a></p>
-              <p><a href="https://www.tyrrellrod.net/" target="_blank" class="text-reset">Register of Deeds</a></p>
-              <p><a href="https://dl.agd.cc/TyrrellWeb/approvedwaterrates2021.pdf" target="_blank" class="text-reset">Water Rates</a></p>
-            </div>
-
-            <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
-              <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
-              <p><i class="bi bi-house-fill"></i> 108 S. Water St. Columbia, NC 27925 <br> P.O. Box 449</p>
-              <p><i class="bi bi-telephone-fill"></i> (252) 796-1371</p>
-            </div>
-
-          </div>
-        </div>
-      </section>
-
-      <!-- Copyright -->
-      <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
-        © 2023 Copyright: <a class="text-reset fw-bold" href="https://tcfranklin2.wordpress.com/" target="_blank">Tyler Franklin</a>
+      <div class="card">
+        <h4>Personnel Policy Manual</h4>
+        <p>The personnel policy establishes a system of personnel administration for Tyrrell County that provides a program to recruit, select, employ, develop and maintain an effective and responsible work force. This policy also covers condition of employment, employee benefits, work rules, grievance procedures, position classification and pay administrator. To know more about personnel policies of Tyrrell County, download following Personnel Policy Manual:</p>
+        <a href="http://tyrrellcounty.org/images/attachment/General%20Requirements%20for%20Permit.pdf" class="btn">
+          <i class="fa-solid fa-download"></i>
+          <span>Download</span>
+        </a>
       </div>
-  
-    </footer>
 
+      <div class="card">
+        <h4>Property Revaluation Information</h4>
+        <p>Click below to download Tyrrell County's Property Revaluation Information</p>
+        <a href="http://dl.agd.cc/TyrrellWeb/solidwasteplan.pdf" class="btn">
+          <i class="fa-solid fa-download"></i>
+          <span>Download</span>
+        </a>
+      </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
-  </body>
+      <div class="card">
+        <h4>Citizen's Guide to Emergency Preparedness</h4>
+        <p>Click below to view Tyrrell County's Citizen's Guide to Emergency Preparedness</p>
+        <a href="https://dl.agd.cc/TyrrellWeb/20190315110632.pdf" class="btn">
+          <i class="fa-solid fa-download"></i>
+          <span>Download</span>
+        </a>
+      </div>
+    </section>
+
+    <section class="fade-in card" aria-labelledby="county-services">
+      <h2 id="county-services">Tyrrell County Services</h2>
+      
+      <div class="card">
+        <h4>Register of Deeds</h4>
+        <p>Click the button below to view the website for Tyrrell County's Register of Deeds</p>
+        <a href="http://www.tyrrellrod.net/" class="btn">
+          <i class="fa-solid fa-external-link-alt"></i>
+          <span>Visit Site</span>
+        </a>
+      </div>
+
+      <div class="card">
+        <h4>Solid Waste Management</h4>
+        <h5>Solid Waste Management Program</h5>
+        <p>Click below to view Tyrrell County's Waste Management Program and the Recycling Collection Schedule</p>
+        <a href="http://dl.agd.cc/TyrrellWeb/solidwasteplan.pdf" class="btn">
+          <i class="fa-solid fa-download"></i>
+          <span>SWM Program</span>
+        </a>
+        <a href="http://dl.agd.cc/TyrrellWeb/2022recyclingschedule.pdf" class="btn">
+          <i class="fa-solid fa-download"></i>
+          <span>RCS</span>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <section class="shadow-lg home-image-section fade-in" aria-label="Tyrrell County Offices in spring">
+    <div class="home-image"></div>
+  </section>
+
+  <footer>
+    <div class="footer-content container">
+      <span>&copy; 2025 Tyrrell County. All rights reserved.</span>
+      <div class="footer-social">
+        <a href="https://facebook.com" class="btn" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://twitter.com" class="btn" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <button class="back-to-top" aria-label="Back to top"><i class="fa-solid fa-arrow-up"></i></button>
+  <script src="../main.js"></script>
+</body>
 </html>
