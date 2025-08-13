@@ -1,46 +1,53 @@
-// "Back to Top" button logic
-const backToTopBtn = document.getElementById('backToTop');
-window.addEventListener('scroll', () => {
-  if (window.scrollY > 200) {
-    backToTopBtn.style.display = 'block';
+// Fade-in animation for sections
+document.addEventListener('DOMContentLoaded', function () {
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    },
+    { threshold: 0.15 }
+  );
+  document.querySelectorAll('.fade-in').forEach((el) => observer.observe(el));
+});
+
+// Back to Top functionality
+const backToTop = document.querySelector('.back-to-top');
+window.addEventListener('scroll', function () {
+  if (window.scrollY > 250) {
+    backToTop.style.display = 'block';
   } else {
-    backToTopBtn.style.display = 'none';
+    backToTop.style.display = 'none';
   }
 });
-backToTopBtn.addEventListener('click', () => {
+backToTop.addEventListener('click', function () {
   window.scrollTo({ top: 0, behavior: 'smooth' });
 });
 
-// Dark mode toggle logic
-const darkModeToggle = document.getElementById('darkModeToggle');
-const root = document.documentElement;
-const themeKey = 'tyrrell-theme';
-
-// Load theme preference
-const savedTheme = localStorage.getItem(themeKey);
-if (savedTheme) {
-  root.setAttribute('data-theme', savedTheme);
-  updateDarkModeIcon(savedTheme === 'dark');
-}
-
-darkModeToggle.addEventListener('click', () => {
-  const dark = root.getAttribute('data-theme') === 'dark';
-  root.setAttribute('data-theme', dark ? 'light' : 'dark');
-  localStorage.setItem(themeKey, dark ? 'light' : 'dark');
-  updateDarkModeIcon(!dark);
-});
-function updateDarkModeIcon(isDark) {
-  darkModeToggle.innerHTML = isDark
-    ? '<i class="bi bi-sun"></i>'
-    : '<i class="bi bi-moon"></i>';
-}
-
-// Keyboard navigation helper: focus outline always visible for keyboard users
-document.body.addEventListener('keydown', function(e) {
-  if (e.key === 'Tab') {
-    document.body.classList.add('user-is-tabbing');
+// Mobile nav menu accessibility
+const menuToggle = document.querySelector('.menu-toggle');
+const navList = document.getElementById('main-nav-list');
+menuToggle.addEventListener('click', function () {
+  const isOpen = menuToggle.getAttribute('aria-expanded') === 'true';
+  menuToggle.setAttribute('aria-expanded', !isOpen);
+  navList.classList.toggle('open');
+  // Focus trap
+  if (!isOpen) {
+    navList.querySelector('a').focus();
+  } else {
+    menuToggle.focus();
   }
 });
-document.body.addEventListener('mousedown', function() {
-  document.body.classList.remove('user-is-tabbing');
+document.addEventListener('keydown', function (e) {
+  if (
+    navList.classList.contains('open') &&
+    e.key === 'Escape'
+  ) {
+    menuToggle.setAttribute('aria-expanded', 'false');
+    navList.classList.remove('open');
+    menuToggle.focus();
+  }
 });

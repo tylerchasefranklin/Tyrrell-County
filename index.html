@@ -2,172 +2,131 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Official site for Tyrrell County, North Carolina. Learn about local government, services, payments, departments, and more.">
-  <meta property="og:title" content="Tyrrell County, North Carolina">
-  <meta property="og:description" content="Explore services, departments, and opportunities in Tyrrell County.">
-  <meta property="og:image" content="images/banner(small).png">
-  <link rel="icon" href="images/favicon.ico" type="image/x-icon">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+  <title>Tyrrell County - Official Website</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Official website for Tyrrell County, North Carolina. Government services, news, and resources.">
+  <meta property="og:title" content="Tyrrell County - Official Website">
+  <meta property="og:description" content="Official website for Tyrrell County, North Carolina. Government services, news, and resources.">
+  <meta property="og:image" content="images/og-image.jpg">
+  <meta name="theme-color" content="#205081">
+  <link rel="icon" href="favicon.ico" sizes="any">
+  <link rel="icon" href="favicon.png" type="image/png">
   <link rel="stylesheet" href="styles.css">
-  <title>Tyrrell County, North Carolina</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 </head>
 <body>
-  <!-- Accessibility Skip Link -->
-  <a class="visually-hidden-focusable skip-link" href="#main-content">Skip to main content</a>
+  <a class="skip-link" href="#main">Skip to content</a>
 
-  <!-- Header / Navbar -->
-  <header class="header header-home shadow-lg" role="banner">
-    <nav class="navbar navbar-expand-lg" aria-label="Site navigation">
-      <div class="container-fluid">
-        <a href="#" class="navbar-brand" aria-label="Tyrrell County Home">
-          <img class="img-fluid rounded" src="images/banner(small).png" alt="Tyrrell County Seal and Banner">
-        </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
+  <header class="header">
+    <div class="container header-flex">
+      <img src="images/logo.png" alt="Tyrrell County Logo" class="site-logo" width="64" height="64">
+      <h1>Tyrrell County</h1>
+      <nav id="main-nav" class="main-nav" aria-label="Main navigation">
+        <button class="menu-toggle" aria-label="Open navigation menu" aria-controls="main-nav-list" aria-expanded="false">
+          <span class="hamburger"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="pages/payments.html">Payments</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="infoDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Public Information
-              </a>
-              <ul class="dropdown-menu" aria-labelledby="infoDropdown">
-                <li><a class="dropdown-item" href="pages/departments.html">Departments</a></li>
-                <li><a class="dropdown-item" href="pages/records.html">Records</a></li>
-              </ul>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="resourcesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Resources
-              </a>
-              <ul class="dropdown-menu" aria-labelledby="resourcesDropdown">
-                <li><a class="dropdown-item" href="pages/forms.html">Forms</a></li>
-                <li><a class="dropdown-item" href="pages/services.html">Services</a></li>
-              </ul>
-            </li>
-          </ul>
-          <form class="d-flex" role="search" aria-label="Site Search">
-            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search the site">
-            <button class="btn btn-outline-light" type="submit">Search</button>
-          </form>
-          <button id="darkModeToggle" class="btn btn-outline-secondary ms-2" aria-label="Toggle dark mode">
-            <i class="bi bi-moon"></i>
-          </button>
-        </div>
-      </div>
-    </nav>
-    <div class="home-buttons">
-  <div class="home-btn-wrapper btn1">
-    <a class="btn home-btn shadow-lg pt-3" href="pages/payments.html" aria-label="Make a Payment">
-      <i class="bi bi-credit-card-fill" style="font-size: 2rem;"></i>
-      <span>Make A Payment</span>
-    </a>
-  </div>
-  <div class="home-btn-wrapper btn2">
-    <a class="btn home-btn shadow-lg pt-3" href="pages/forms.html" aria-label="Forms and Applications">
-      <i class="bi bi-ui-checks" style="font-size: 2rem;"></i>
-      <span>Forms & Applications</span>
-    </a>
-  </div>
-  <div class="home-btn-wrapper btn3">
-    <a class="btn home-btn shadow-lg pt-4" href="pages/resources.html" aria-label="Find a Job">
-      <i class="bi bi-search" style="font-size: 2rem;"></i>
-      <span>Find A Job</span>
-    </a>
-  </div>
-  <div class="home-btn-wrapper btn4">
-    <a class="btn home-btn shadow-lg pt-4" href="http://tyrrellcountygis.com/nc/tyrrell/?v=20150224" aria-label="View GIS Data" target="_blank" rel="noopener">
-      <i class="bi bi-globe-americas" style="font-size: 2rem;"></i>
-      <span>View GIS Data</span>
-    </a>
-  </div>
-</div>
+        <ul id="main-nav-list" class="nav-list" tabindex="-1">
+          <li><a href="#services" class="nav-link">Services</a></li>
+          <li><a href="#departments" class="nav-link">Departments</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
 
-  <!-- Main Content -->
-  <main id="main-content" class="shadow-lg" tabindex="-1">
-    <section class="container home-text shadow-lg">
+  <main id="main" class="container" tabindex="-1">
+    <section class="home-text fade-in" aria-labelledby="welcome-header">
+      <h2 id="welcome-header">Welcome to Tyrrell County</h2>
       <p>
-        Tyrrell County is a diverse economic and ecological destination located between the northeast North Carolina urban mainland and the Outer Banks. Founded in 1729 and named for one of the Lords Proprietors, it is North Carolina’s least populous county and boasts beautiful nature, outdoor recreation, and a welcoming community.
+        Discover services, news, and resources for Tyrrell County residents, businesses, and visitors.
       </p>
     </section>
-    <section class="shadow-lg home-image-section" aria-label="Tyrrell County Offices in spring">
-      <div class="home-image"></div>
+
+    <section class="home-buttons fade-in" aria-label="Quick Links">
+      <div class="home-btn-wrapper">
+        <a href="#services" class="home-btn btn">
+          <i class="fa-solid fa-file-alt"></i>
+          <span>Services</span>
+        </a>
+      </div>
+      <div class="home-btn-wrapper">
+        <a href="#departments" class="home-btn btn">
+          <i class="fa-solid fa-building"></i>
+          <span>Departments</span>
+        </a>
+      </div>
+      <div class="home-btn-wrapper">
+        <a href="#about" class="home-btn btn">
+          <i class="fa-solid fa-info-circle"></i>
+          <span>About</span>
+        </a>
+      </div>
+      <div class="home-btn-wrapper">
+        <a href="#contact" class="home-btn btn">
+          <i class="fa-solid fa-envelope"></i>
+          <span>Contact</span>
+        </a>
+      </div>
     </section>
-    <button id="backToTop" class="btn btn-primary back-to-top" aria-label="Back to top" title="Back to top">
-      <i class="bi bi-arrow-up"></i>
-    </button>
+
+    <section class="fade-in card" id="services" aria-labelledby="services-header">
+      <h2 id="services-header">County Services</h2>
+      <ul>
+        <li>Property Tax Payment</li>
+        <li>Permits & Zoning</li>
+        <li>Public Safety</li>
+        <li>Health & Social Services</li>
+      </ul>
+    </section>
+
+    <section class="fade-in card" id="departments" aria-labelledby="departments-header">
+      <h2 id="departments-header">Departments</h2>
+      <ul>
+        <li>Administration</li>
+        <li>Board of Commissioners</li>
+        <li>Emergency Management</li>
+        <li>Planning & Inspections</li>
+      </ul>
+    </section>
+
+    <section class="fade-in card" id="about" aria-labelledby="about-header">
+      <h2 id="about-header">About Tyrrell County</h2>
+      <p>
+        Tyrrell County is the easternmost county in North Carolina. It is known for its natural beauty and vibrant community.
+      </p>
+    </section>
+
+    <section class="fade-in card" id="contact" aria-labelledby="contact-header">
+      <h2 id="contact-header">Contact Us</h2>
+      <p>
+        123 Main St, Columbia, NC 27925<br>
+        <a href="mailto:info@tyrrellcounty.gov">info@tyrrellcounty.gov</a><br>
+        (252) 555-1234
+      </p>
+    </section>
   </main>
 
-  <!-- Footer -->
-  <footer class="text-center text-lg-start bg-dark text-white" role="contentinfo">
-    <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom footer-social">
-      <div class="me-5 d-none d-lg-block">
-        <h5 class="fw-bold">Stay Connected:</h5>
+  <section class="shadow-lg home-image-section fade-in" aria-label="Tyrrell County Offices in spring">
+    <div class="home-image"></div>
+  </section>
+
+  <footer>
+    <div class="footer-content container">
+      <span>&copy; 2025 Tyrrell County. All rights reserved.</span>
+      <div class="footer-social">
+        <a href="https://facebook.com" class="btn" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://twitter.com" class="btn" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
       </div>
-      <div>
-        <a class="btn text-white btn-floating m-1" style="background-color: #3b5998;" href="http://www.facebook.com/sharer.php?u=http://tyrrellcounty.org/en/" aria-label="Share on Facebook" role="button">
-          <i class="bi bi-facebook"></i>
-        </a>
-        <a class="btn text-white btn-floating m-1" style="background-color: #000000;" href="http://twitter.com/home?status=http://tyrrellcounty.org/en/" aria-label="Share on Twitter" role="button">
-          <i class="bi bi-twitter-x"></i>
-        </a>
-        <a class="btn text-white btn-floating m-1" style="background-color: #dd4b39;" href="http://www.google.com/bookmarks/mark?op=edit&bkmk=http://tyrrellcounty.org/en/" aria-label="Bookmark on Google" role="button">
-          <i class="bi bi-google"></i>
-        </a>
-        <a class="btn text-white btn-floating m-1" style="background-color: #0082ca;" href="http://www.linkedin.com/shareArticle?mini=true&url=http://tyrrellcounty.org/en/" aria-label="Share on LinkedIn" role="button">
-          <i class="bi bi-linkedin"></i>
-        </a>
-      </div>
-    </section>
-    <section>
-      <div class="container text-center text-md-start mt-5">
-        <div class="row mt-3">
-          <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
-            <h6 class="text-uppercase fw-bold mb-4">Tyrrell County</h6>
-            <p>
-              ...nature's buffer zone, sprawled between the urban mainland and the popular stretch of North Carolina's Outer Banks.
-            </p>
-          </div>
-          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
-            <h6 class="text-uppercase fw-bold mb-4"><a class="nav-link" href="#">Home</a></h6>
-            <p><a href="pages/payments.html" class="text-reset">Payments</a></p>
-            <p><a href="pages/departments.html" class="text-reset">Departments</a></p>
-            <p><a href="pages/records.html" class="text-reset">Records</a></p>
-            <p><a href="pages/forms.html" class="text-reset">Forms</a></p>
-            <p><a href="pages/services.html" class="text-reset">Services</a></p>
-          </div>
-          <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
-            <h6 class="text-uppercase fw-bold mb-4">Useful links</h6>
-            <p><a href="https://www.ncworks.gov/vosnet/default.aspx" target="_blank" rel="noopener" class="text-reset">NC Works</a></p>
-            <p><a href="https://www.tyrrellrod.net/" target="_blank" rel="noopener" class="text-reset">Register of Deeds</a></p>
-            <p><a href="https://dl.agd.cc/TyrrellWeb/approvedwaterrates2021.pdf" target="_blank" rel="noopener" class="text-reset">Water Rates</a></p>
-          </div>
-          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
-            <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
-            <p><i class="bi bi-house-fill"></i> 108 S. Water St. Columbia, NC 27925 <br> P.O. Box 449</p>
-            <p><i class="bi bi-telephone-fill"></i> (252) 796-1371</p>
-          </div>
-        </div>
-      </div>
-    </section>
-    <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
-      © 2025 Copyright:
-      <a class="text-reset fw-bold" href="https://tcfranklin2.wordpress.com/" target="_blank" rel="noopener">Tyler Franklin</a>
     </div>
   </footer>
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"></script>
+
+  <button class="back-to-top" aria-label="Back to top"><i class="fa-solid fa-arrow-up"></i></button>
   <script src="main.js"></script>
 </body>
 </html>
