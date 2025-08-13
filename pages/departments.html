@@ -2,253 +2,206 @@
 Name: Tyler Franklin
 File: departments.html
 Date: 11/30/23
+Updated: 2025 - Modern design matching index.html
 -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
-    <link rel="stylesheet" href="../styles.css">
-    <title>Tyrell County North Carolina</title>
+  <meta charset="UTF-8">
+  <title>Departments - Tyrrell County</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Tyrrell County departments, staff directory, and contact information for county officials.">
+  <meta property="og:title" content="Departments - Tyrrell County">
+  <meta property="og:description" content="Tyrrell County departments, staff directory, and contact information for county officials.">
+  <meta property="og:image" content="../images/og-image.jpg">
+  <meta name="theme-color" content="#205081">
+  <link rel="icon" href="../favicon.ico" sizes="any">
+  <link rel="icon" href="../favicon.png" type="image/png">
+  <link rel="stylesheet" href="../styles.css">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 </head>
 <body>
+  <a class="skip-link" href="#main">Skip to content</a>
 
-    <!-- header -->
-    <header class="header header-payments shadow-lg">
-        <nav class="navbar navbar-expand-lg">
-            <div class="container-fluid">
-              <a href="../index.html"><img class="img-fluid rounded" src="../images/banner(small).png" alt="Tyrrell County Seal"></a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                  <li class="nav-item">
-                    <a class="nav-link" aria-current="page" href="../index.html">Home</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="payments.html">Payments</a>
-                  </li>
-                  <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle active b" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      Public Information
-                    </a>
-                    <ul class="dropdown-menu">
-                      <li><a class="dropdown-item active b" href="#">Departments</a></li>
-                      <li><a class="dropdown-item" href="records.html">Records</a></li>
-                    </ul>
-                  </li>
-                  <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      Resources
-                    </a>
-                    <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" href="forms.html">Forms</a></li>
-                      <li><a class="dropdown-item" href="services.html">Services</a></li>
-                    </ul>
-                  </li>
-                </ul>
-                <form class="d-flex" role="search">
-                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                  <button class="btn btn-outline-light" type="submit">Search</button>
-                </form>
-              </div>
-            </div>
-          </nav>
+  <header class="header">
+    <div class="container header-flex">
+      <img src="../images/logo.png" alt="Tyrrell County Logo" class="site-logo" width="64" height="64">
+      <h1>Tyrrell County</h1>
+      <nav id="main-nav" class="main-nav" aria-label="Main navigation">
+        <button class="menu-toggle" aria-label="Open navigation menu" aria-controls="main-nav-list" aria-expanded="false">
+          <span class="hamburger"></span>
+        </button>
+        <ul id="main-nav-list" class="nav-list" tabindex="-1">
+          <li><a href="../index.html" class="nav-link">Home</a></li>
+          <li><a href="services.html" class="nav-link">Services</a></li>
+          <li><a href="departments.html" class="nav-link" aria-current="page">Departments</a></li>
+          <li><a href="payments.html" class="nav-link">Payments</a></li>
+          <li><a href="forms.html" class="nav-link">Forms</a></li>
+          <li><a href="records.html" class="nav-link">Records</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
-          <!-- Main content - elements are put inside header to make use of the background image -->
-         
-          <section class="grid-2 departments rounded p-5 m-5 shadow-lg">
-            <div style="display: grid;" class="text-center">
-              <img style="place-self: center;" class="img-fluid rounded shadow" src="../images/commis.jpg" alt="Tyrrell County Board of County Commissioners">
-            </div>
-            <div class="card" >
-              <div class="card-body">
-                <h5 class="card-title">Board Of County Commissioners</h5>
-              </div>
-              <ul class="list-group list-group-flush">
-                <li class="list-group-item">Chairman: Nathan T. Everett</li>
-                <li class="list-group-item">Vice Chairman: Nina B. Griswell</li>
-                <li class="list-group-item">County Manager: David L. Clegg</li>
-                <li class="list-group-item">Clerk to the Board: Penny Rhodes Owens</li>
-                <li class="list-group-item">County Attorney: David L. Clegg</li>
-                <li class="list-group-item">County Commissioner: Jordan R. Davis</li>
-                <li class="list-group-item">County Commisioner: Dorothy Spencer</li>
-                <li class="list-group-item">County Commisioner: Robert Thompson</li>
-              </ul>
-            </div>
-          </section>
-          
-    </header>
+  <main id="main" class="container" tabindex="-1">
+    <section class="home-text fade-in" aria-labelledby="departments-intro">
+      <h2 id="departments-intro">County Departments</h2>
+      <p>
+        Connect with Tyrrell County departments, officials, and staff to access the services you need.
+      </p>
+    </section>
 
-    <!-- Main Content -->
-    <main>
-      <section class="grid-4 shadow-lg rounded">
-
-        <div class="card">
-          <div class="card-body">
-            <h5 class="card-title">Administration</h5>
-          </div>
-          <ul class="list-group list-group-flush">
-            <li class="list-group-item">David L. Clegg: County Manager/Attorney</li>
-            <li class="list-group-item">252-796-1371</li>
-            <li class="list-group-item"><a href="dclegg@tyrrellcounty.net" class="card-link">dclegg@tyrrellcounty.net</a></li>
-          </ul>
+    <section class="fade-in card" aria-labelledby="commissioners-header">
+      <h2 id="commissioners-header">Board of County Commissioners</h2>
+      <div style="display: grid; grid-template-columns: 1fr 2fr; gap: 2rem; align-items: center;">
+        <div style="text-align: center;">
+          <img src="../images/commis.jpg" alt="Tyrrell County Board of County Commissioners" style="width: 100%; border-radius: 8px; box-shadow: 0 2px 8px rgba(32,80,129,0.15);">
         </div>
-
-        <div class="card">
-          <div class="card-body">
-            <h5 class="card-title">Administration</h5>
-          </div>
-          <ul class="list-group list-group-flush">
-            <li class="list-group-item">Penny Rhodes Owens: Clerk to the Board, Assistant to County Manager/Attorney</li>
-            <li class="list-group-item">252-796-1371, ext. 2621</li>
-            <li class="list-group-item"><a href="pennyowens@tyrrellcounty.net" class="card-link">pennyowens@tyrrellcounty.net</a></li>
-          </ul>
-        </div>
-
-        <div class="card">
-          <div class="card-body">
-            <h5 class="card-title">Animal Control</h5>
-          </div>
-          <ul class="list-group list-group-flush">
-            <li class="list-group-item">Cecil Lilley: Animal Control Officer</li>
-            <li class="list-group-item">252-766-0033</li>
-            <li class="list-group-item"><a href="clilley@tyrrellcounty.net" class="card-link">clilley@tyrrellcounty.net</a></li>
-          </ul>
-        </div>
-
-        <div class="card">
-          <div class="card-body">
-            <h5 class="card-title">Board of Elections</h5>
-          </div>
-          <ul class="list-group list-group-flush">
-            <li class="list-group-item">Emily K. Hodges: Director</li>
-            <li class="list-group-item">252-796-0775</li>
-            <li class="list-group-item"><a href="elections@tyrrellcounty.net" class="card-link">elections@tyrrellcounty.net</a></li>
-          </ul>
-        </div>
-
-        <div class="card">
-          <div class="card-body">
-            <h5 class="card-title">Buildings & Grounds/Emergency Management</h5>
-          </div>
-          <ul class="list-group list-group-flush">
-            <li class="list-group-item">Wesley Hopkins: Maintenance Supervisor/Emergency Management Coordinator</li>
-            <li class="list-group-item">252-796-1371, ext. 2613</li>
-            <li class="list-group-item"><a href="weshopkins@tyrrellcounty.net" class="card-link">weshopkins@tyrrellcounty.nett</a></li>
-          </ul>
-        </div>
-
-        <div class="card">
-          <div class="card-body">
-            <h5 class="card-title">Building Inspections</h5>
-          </div>
-          <ul class="list-group list-group-flush">
-            <li class="list-group-item">Joie Spencer: Building Inspector, Fire Marshal, Ordinance Enforcement</li>
-            <li class="list-group-item">252-796-1371, ext. 2673</li>
-            <li class="list-group-item"><a href="joies@tyrrellcounty.net" class="card-link">joies@tyrrellcounty.net</a></li>
-          </ul>
-        </div>
-
-        <div class="card">
-          <div class="card-body">
-            <h5 class="card-title">Department of Social Service</h5>
-          </div>
-          <ul class="list-group list-group-flush">
-            <li class="list-group-item">Valerie Phelps: Director</li>
-            <li class="list-group-item">252-796-3421, ext.2653</li>
-            <li class="list-group-item"><a href="vphelps@tyrrellcounty.net" class="card-link">vphelps@tyrrellcounty.net</a></li>
-          </ul>
-        </div>
-
-        <div class="card">
-          <div class="card-body">
-            <h5 class="card-title">EMS</h5>
-          </div>
-          <ul class="list-group list-group-flush">
-            <li class="list-group-item">Jennifer Allen O'Neal: EMS Director</li>
-            <li class="list-group-item">252-793-7636 (office)</li>
-            <li class="list-group-item">252-217-2266 (cell)</li>
-            <li class="list-group-item"><a href="acoccaro@washconc.org" class="card-link">acoccaro@washconc.org</a></li>
-          </ul>
-        </div>
-
-      </section>
-      
-      <section>
-        <img class="home-image" src="../images/spring.jpg" alt="Tyrrell County Offices">
-      </section>
-
-    </main>
-    
-    <!-- footer -->
-    
-    <footer class="text-center text-lg-start bg-dark">
-
-      <!-- Social media -->
-      <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
-        <div class="me-5 d-none d-lg-block">
-          <h5 class="fw-bold">Stay Connected:</h5>
-        </div>
-
         <div>
-          <a class="btn text-white btn-floating m-1" style="background-color: #3b5998;" href="http://www.facebook.com/sharer.php?u=http://tyrrellcounty.org/en/&title=Home" role="button"><i class="bi bi-facebook"></i></a>
-          <a class="btn text-white btn-floating m-1" style="background-color: #000000;" href="http://twitter.com/home?status=http://tyrrellcounty.org/en/&title=Home" role="button"><i class="bi bi-twitter-x"></i></a>
-          <a class="btn text-white btn-floating m-1" style="background-color: #dd4b39;" href="http://www.google.com/bookmarks/mark?op=edit&bkmk=http://tyrrellcounty.org/en/&title=" role="button"><i class="bi bi-google"></i></a>
-          <a class="btn text-white btn-floating m-1" style="background-color: #0082ca;" href="http://www.linkedin.com/shareArticle?mini=true&url=http://tyrrellcounty.org/en/&summary=%5B..%5D&source=" role="button"><i class="bi bi-linkedin"></i></a>
+          <ul style="list-style: none; padding: 0;">
+            <li style="padding: 0.5em 0; border-bottom: 1px solid #eee;"><strong>Chairman:</strong> Nathan T. Everett</li>
+            <li style="padding: 0.5em 0; border-bottom: 1px solid #eee;"><strong>Vice Chairman:</strong> Nina B. Griswell</li>
+            <li style="padding: 0.5em 0; border-bottom: 1px solid #eee;"><strong>County Manager:</strong> David L. Clegg</li>
+            <li style="padding: 0.5em 0; border-bottom: 1px solid #eee;"><strong>Clerk to the Board:</strong> Penny Rhodes Owens</li>
+            <li style="padding: 0.5em 0; border-bottom: 1px solid #eee;"><strong>County Attorney:</strong> David L. Clegg</li>
+            <li style="padding: 0.5em 0; border-bottom: 1px solid #eee;"><strong>County Commissioner:</strong> Jordan R. Davis</li>
+            <li style="padding: 0.5em 0; border-bottom: 1px solid #eee;"><strong>County Commissioner:</strong> Dorothy Spencer</li>
+            <li style="padding: 0.5em 0;"><strong>County Commissioner:</strong> Robert Thompson</li>
+          </ul>
         </div>
-
-      </section>
-
-      <!-- Links and Contact -->
-      <section>
-        <div class="container text-center text-md-start mt-5">
-          <div class="row mt-3">
-
-            <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
-              <h6 class="text-uppercase fw-bold mb-4">Tyrell County</h6>
-              <p>...nature's buffer zone, sprawled between the urban mainland and the popular stretch of North Carolina's Outer Banks</p>
-            </div>
-
-            <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
-              <h6 class="text-uppercase fw-bold mb-4"><a class="nav-link" href="../index.html">Home</a></h6>
-              <p><a href="payments.html" class="text-reset">Payments</a></p>
-              <p><a href="#" class="text-reset">Departments</a></p>
-              <p><a href="records.html" class="text-reset">Records</a></p>
-              <p><a href="forms.html" class="text-reset">Forms</a></p>
-              <p><a href="services.html" class="text-reset">Services</a></p>
-            </div>
-            
-            <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
-              <h6 class="text-uppercase fw-bold mb-4">Useful links</h6>
-              <p><a href="https://www.ncworks.gov/vosnet/default.aspx" target="_blank" class="text-reset">NC Works</a></p>
-              <p><a href="https://www.tyrrellrod.net/" target="_blank" class="text-reset">Register of Deeds</a></p>
-              <p><a href="https://dl.agd.cc/TyrrellWeb/approvedwaterrates2021.pdf" target="_blank" class="text-reset">Water Rates</a></p>
-            </div>
-
-            <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
-              <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
-              <p><i class="bi bi-house-fill"></i> 108 S. Water St. Columbia, NC 27925 <br> P.O. Box 449</p>
-              <p><i class="bi bi-telephone-fill"></i> (252) 796-1371</p>
-            </div>
-
-          </div>
-        </div>
-      </section>
-
-      <!-- Copyright -->
-      <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
-        © 2023 Copyright: <a class="text-reset fw-bold" href="https://tcfranklin2.wordpress.com/" target="_blank">Tyler Franklin</a>
       </div>
-  
-    </footer>
+    </section>
 
+    <section class="fade-in card" aria-labelledby="departments-directory">
+      <h2 id="departments-directory">Department Directory</h2>
+      <div class="home-buttons">
+        <div class="home-btn-wrapper">
+          <a href="mailto:dclegg@tyrrellcounty.net" class="home-btn btn">
+            <i class="fa-solid fa-user-tie"></i>
+            <span>Administration</span>
+          </a>
+        </div>
+        <div class="home-btn-wrapper">
+          <a href="mailto:clilley@tyrrellcounty.net" class="home-btn btn">
+            <i class="fa-solid fa-dog"></i>
+            <span>Animal Control</span>
+          </a>
+        </div>
+        <div class="home-btn-wrapper">
+          <a href="mailto:elections@tyrrellcounty.net" class="home-btn btn">
+            <i class="fa-solid fa-vote-yea"></i>
+            <span>Elections</span>
+          </a>
+        </div>
+        <div class="home-btn-wrapper">
+          <a href="mailto:weshopkins@tyrrellcounty.net" class="home-btn btn">
+            <i class="fa-solid fa-exclamation-triangle"></i>
+            <span>Emergency Mgmt</span>
+          </a>
+        </div>
+        <div class="home-btn-wrapper">
+          <a href="mailto:joies@tyrrellcounty.net" class="home-btn btn">
+            <i class="fa-solid fa-hard-hat"></i>
+            <span>Inspections</span>
+          </a>
+        </div>
+        <div class="home-btn-wrapper">
+          <a href="mailto:vphelps@tyrrellcounty.net" class="home-btn btn">
+            <i class="fa-solid fa-hands-helping"></i>
+            <span>Social Services</span>
+          </a>
+        </div>
+        <div class="home-btn-wrapper">
+          <a href="mailto:acoccaro@washconc.org" class="home-btn btn">
+            <i class="fa-solid fa-ambulance"></i>
+            <span>EMS</span>
+          </a>
+        </div>
+      </div>
+    </section>
 
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
-  </body>
+    <section class="fade-in card" aria-labelledby="detailed-contacts">
+      <h3 id="detailed-contacts">Detailed Contact Information</h3>
+      
+      <div class="card">
+        <h4><i class="fa-solid fa-user-tie"></i> Administration</h4>
+        <p><strong>David L. Clegg</strong> - County Manager/Attorney</p>
+        <p><i class="fa-solid fa-phone"></i> 252-796-1371</p>
+        <p><i class="fa-solid fa-envelope"></i> <a href="mailto:dclegg@tyrrellcounty.net">dclegg@tyrrellcounty.net</a></p>
+      </div>
+
+      <div class="card">
+        <h4><i class="fa-solid fa-user-tie"></i> Administration Assistant</h4>
+        <p><strong>Penny Rhodes Owens</strong> - Clerk to the Board, Assistant to County Manager/Attorney</p>
+        <p><i class="fa-solid fa-phone"></i> 252-796-1371, ext. 2621</p>
+        <p><i class="fa-solid fa-envelope"></i> <a href="mailto:pennyowens@tyrrellcounty.net">pennyowens@tyrrellcounty.net</a></p>
+      </div>
+
+      <div class="card">
+        <h4><i class="fa-solid fa-dog"></i> Animal Control</h4>
+        <p><strong>Cecil Lilley</strong> - Animal Control Officer</p>
+        <p><i class="fa-solid fa-phone"></i> 252-766-0033</p>
+        <p><i class="fa-solid fa-envelope"></i> <a href="mailto:clilley@tyrrellcounty.net">clilley@tyrrellcounty.net</a></p>
+      </div>
+
+      <div class="card">
+        <h4><i class="fa-solid fa-vote-yea"></i> Board of Elections</h4>
+        <p><strong>Emily K. Hodges</strong> - Director</p>
+        <p><i class="fa-solid fa-phone"></i> 252-796-0775</p>
+        <p><i class="fa-solid fa-envelope"></i> <a href="mailto:elections@tyrrellcounty.net">elections@tyrrellcounty.net</a></p>
+      </div>
+
+      <div class="card">
+        <h4><i class="fa-solid fa-exclamation-triangle"></i> Buildings & Grounds/Emergency Management</h4>
+        <p><strong>Wesley Hopkins</strong> - Maintenance Supervisor/Emergency Management Coordinator</p>
+        <p><i class="fa-solid fa-phone"></i> 252-796-1371, ext. 2613</p>
+        <p><i class="fa-solid fa-envelope"></i> <a href="mailto:weshopkins@tyrrellcounty.net">weshopkins@tyrrellcounty.net</a></p>
+      </div>
+
+      <div class="card">
+        <h4><i class="fa-solid fa-hard-hat"></i> Building Inspections</h4>
+        <p><strong>Joie Spencer</strong> - Building Inspector, Fire Marshal, Ordinance Enforcement</p>
+        <p><i class="fa-solid fa-phone"></i> 252-796-1371, ext. 2673</p>
+        <p><i class="fa-solid fa-envelope"></i> <a href="mailto:joies@tyrrellcounty.net">joies@tyrrellcounty.net</a></p>
+      </div>
+
+      <div class="card">
+        <h4><i class="fa-solid fa-hands-helping"></i> Department of Social Services</h4>
+        <p><strong>Valerie Phelps</strong> - Director</p>
+        <p><i class="fa-solid fa-phone"></i> 252-796-3421, ext. 2653</p>
+        <p><i class="fa-solid fa-envelope"></i> <a href="mailto:vphelps@tyrrellcounty.net">vphelps@tyrrellcounty.net</a></p>
+      </div>
+
+      <div class="card">
+        <h4><i class="fa-solid fa-ambulance"></i> EMS</h4>
+        <p><strong>Jennifer Allen O'Neal</strong> - EMS Director</p>
+        <p><i class="fa-solid fa-phone"></i> 252-793-7636 (office)</p>
+        <p><i class="fa-solid fa-phone"></i> 252-217-2266 (cell)</p>
+        <p><i class="fa-solid fa-envelope"></i> <a href="mailto:acoccaro@washconc.org">acoccaro@washconc.org</a></p>
+      </div>
+    </section>
+  </main>
+
+  <section class="shadow-lg home-image-section fade-in" aria-label="Tyrrell County Offices in spring">
+    <div class="home-image"></div>
+  </section>
+
+  <footer>
+    <div class="footer-content container">
+      <span>&copy; 2025 Tyrrell County. All rights reserved.</span>
+      <div class="footer-social">
+        <a href="https://facebook.com" class="btn" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://twitter.com" class="btn" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <button class="back-to-top" aria-label="Back to top"><i class="fa-solid fa-arrow-up"></i></button>
+  <script src="../main.js"></script>
+</body>
 </html>
