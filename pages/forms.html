@@ -1,285 +1,163 @@
-<!-- 
-Name: Tyler Franklin
-File: forms.html
-Date: 11/30/23
--->
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
-    <link rel="stylesheet" href="../styles.css">
-    <title>Tyrell County North Carolina</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Download forms and applications for Tyrrell County services, permits, and more.">
+  <meta property="og:title" content="Forms - Tyrrell County, North Carolina">
+  <meta property="og:description" content="Access forms and applications for Tyrrell County services.">
+  <meta property="og:image" content="../images/banner(small).png">
+  <link rel="icon" href="../images/favicon.ico" type="image/x-icon">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="../styles.css">
+  <title>Forms | Tyrrell County, North Carolina</title>
 </head>
 <body>
+  <a class="visually-hidden-focusable skip-link" href="#main-content">Skip to main content</a>
 
-    <!-- header -->
-    <header class="header header-payments shadow-lg">
-        <nav class="navbar navbar-expand-lg">
-            <div class="container-fluid">
-              <a href="../index.html"><img class="img-fluid rounded" src="../images/banner(small).png" alt=""></a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                  <li class="nav-item">
-                    <a class="nav-link" aria-current="page" href="../index.html">Home</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="payments.html">Payments</a>
-                  </li>
-                  <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      Public Information
-                    </a>
-                    <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" href="departments.html">Departments</a></li>
-                      <li><a class="dropdown-item" href="records.html">Records</a></li>
-                    </ul>
-                  </li>
-                  <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle active b" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      Resources
-                    </a>
-                    <ul class="dropdown-menu">
-                      <li><a class="dropdown-item active b" href="#">Forms</a></li>
-                      <li><a class="dropdown-item" href="services.html">Services</a></li>
-                    </ul>
-                  </li>
-                </ul>
-                <form class="d-flex" role="search">
-                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                  <button class="btn btn-outline-light" type="submit">Search</button>
-                </form>
-              </div>
-            </div>
-          </nav> 
-
-          <div class="heading rounded">
-            <h4 class="text-center m-4">Here you will find access to various forms and applications for Tyrell County. Click a button to download the file for it.</h4>
-          </div>
-          
-
-          
-    </header>
-
-    <main>
-
-      <section class="grid-4 shadow-lg rounded">
-
-        <div class="card">
-          <div class="card-body">
-            <h5 class="card-title">Delinquent Tax Ordinance</h5>
-          </div>
-          <ul class="list-group list-group-flush">
-            <li class="list-group-item"><a href="http://tyrrellcounty.org/images/attachment/Delinquent%20Tax%20Ordniance.pdf" class="btn btn-primary">Download</a></li>
+  <header class="header shadow-lg" role="banner">
+    <nav class="navbar navbar-expand-lg" aria-label="Site navigation">
+      <div class="container-fluid">
+        <a href="../index.html" class="navbar-brand" aria-label="Tyrrell County Home">
+          <img class="img-fluid rounded" src="../images/banner(small).png" alt="Tyrrell County Seal and Banner">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item"><a class="nav-link" href="../index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="payments.html">Payments</a></li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="infoDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Public Information
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="infoDropdown">
+                <li><a class="dropdown-item" href="departments.html">Departments</a></li>
+                <li><a class="dropdown-item" href="records.html">Records</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="resourcesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Resources
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="resourcesDropdown">
+                <li><a class="dropdown-item active" aria-current="page" href="forms.html">Forms</a></li>
+                <li><a class="dropdown-item" href="services.html">Services</a></li>
+              </ul>
+            </li>
           </ul>
+          <button id="darkModeToggle" class="btn btn-outline-secondary ms-2" aria-label="Toggle dark mode">
+            <i class="bi bi-moon"></i>
+          </button>
         </div>
-
-        <div class="card">
-          <div class="card-body">
-            <h5 class="card-title">General Requirements for Permit</h5>
-          </div>
-          <ul class="list-group list-group-flush">
-            <li class="list-group-item"><a href="http://tyrrellcounty.org/images/attachment/General%20Requirements%20for%20Permit.pdf" class="btn btn-warning">Download</a></li>
-          </ul>
-        </div>
-
-        <div class="card">
-          <div class="card-body">
-            <h5 class="card-title">Inspections request outline</h5>
-            <h6 class="card-subtitle mb-2 text-body-secondary">Stick Built & Modular Homes</h6>
-          </div>
-          <ul class="list-group list-group-flush">
-            <li class="list-group-item"><a href="http://tyrrellcounty.org/images/attachment/Inspections%20request%20outline%20for%20Stick%20Built%20&%20Modular%20Homes.pdf" class="btn btn-success">Download</a></li>
-          </ul>
-        </div>
-
-        <div class="card">
-          <div class="card-body">
-            <h5 class="card-title">Inspections request outline</h5>
-            <h6 class="card-subtitle mb-2 text-body-secondary">Mobile Homes</h6>
-          </div>
-          <ul class="list-group list-group-flush">
-            <li class="list-group-item"><a href="http://tyrrellcounty.org/images/attachment/Inspections%20request%20outline%20Mobile%20Home.pdf" class="btn btn-info">Download</a></li>
-          </ul>
-        </div>
-
-        <div class="card">
-          <div class="card-body">
-            <h5 class="card-title">NC Code for Decks</h5>
-          </div>
-          <ul class="list-group list-group-flush">
-            <li class="list-group-item"><a href="http://dl.agd.cc/TyrrellWeb/deckcode2016.pdf" class="btn btn-danger">Download</a></li>
-          </ul>
-        </div>
-
-        <div class="card">
-          <div class="card-body">
-            <h5 class="card-title">Building permit checklist</h5>
-          </div>
-          <ul class="list-group list-group-flush">
-            <li class="list-group-item"><a href="https://dl.agd.cc/TyrrellWeb/permitcheck.doc" class="btn btn-secondary">Download</a></li>
-          </ul>
-        </div>
-
-        <div class="card">
-          <div class="card-body">
-            <h5 class="card-title">Building permit</h5>
-          </div>
-          <ul class="list-group list-group-flush">
-            <li class="list-group-item"><a href="http://dl.agd.cc/TyrrellWeb/permitapp.pdf" class="btn btn-dark">Download</a></li>
-          </ul>
-        </div>
-
-        <div class="card">
-          <div class="card-body">
-            <h5 class="card-title">Demolition Permit</h5>
-          </div>
-          <ul class="list-group list-group-flush">
-            <li class="list-group-item"><a href="http://tyrrellcounty.org/images/2.pdf" class="btn btn-primary">Download</a></li>
-          </ul>
-        </div>
-
-        <div class="card">
-          <div class="card-body">
-            <h5 class="card-title">Electrical Application</h5>
-          </div>
-          <ul class="list-group list-group-flush">
-            <li class="list-group-item"><a href="http://dl.agd.cc/TyrrellWeb/elect.pdf" class="btn btn-warning">Download</a></li>
-          </ul>
-        </div>
-
-        <div class="card">
-          <div class="card-body">
-            <h5 class="card-title">Mechanical Application</h5>
-          </div>
-          <ul class="list-group list-group-flush">
-            <li class="list-group-item"><a href="http://tyrrellcounty.org/images/attachment/MECHANICAL%20APP%20.pdf" class="btn btn-success">Download</a></li>
-          </ul>
-        </div>
-
-        <div class="card">
-          <div class="card-body">
-            <h5 class="card-title">Plumbing Application</h5>
-          </div>
-          <ul class="list-group list-group-flush">
-            <li class="list-group-item"><a href="http://tyrrellcounty.org/attachments/article/133/PLUMBING%20APP.PDF" class="btn btn-info">Download</a></li>
-          </ul>
-        </div>
-
-        <div class="card">
-          <div class="card-body">
-            <h5 class="card-title">Safety Permit Application</h5>
-          </div>
-          <ul class="list-group list-group-flush">
-            <li class="list-group-item"><a href="http://tyrrellcounty.org/images/attachment/SafetyPermitApp.pdf" class="btn btn-danger">Download</a></li>
-          </ul>
-        </div>
-
-        <div class="card">
-          <div class="card-body">
-            <h5 class="card-title">Tyrrell County utility-safety</h5>
-          </div>
-          <ul class="list-group list-group-flush">
-            <li class="list-group-item"><a href="http://tyrrellcounty.org/images/attachment/TYRRELL%20COUNTY%20UTILITY-SAFETY.pdf" class="btn btn-secondary">Download</a></li>
-          </ul>
-        </div>
-
-        <div class="card">
-          <div class="card-body">
-            <h5 class="card-title">Tyrrell County Building Inspections Permit Fee Schedule</h5>
-          </div>
-          <ul class="list-group list-group-flush">
-            <li class="list-group-item"><a href="http://tyrrellcounty.org/images/Permit%20Fee%20Schedule%2011-07-07%20revised%208-8-13.pdf" class="btn btn-dark">Download</a></li>
-          </ul>
-        </div>
-
-        <div class="card">
-          <div class="card-body">
-            <h5 class="card-title">Utility Connection Application</h5>
-          </div>
-          <ul class="list-group list-group-flush">
-            <li class="list-group-item"><a href="https://dl.agd.cc/TyrrellWeb/utilconnect.pdf" class="btn btn-primary">Download</a></li>
-          </ul>
-        </div>
-
-      </section>
-
-      <section>
-        <img class="home-image" src="../images/spring.jpg" alt="">
-      </section>
-    </main>
-
-    
-    <!-- footer -->
-    
-    <footer class="text-center text-lg-start bg-dark">
-
-      <!-- Social media -->
-      <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
-        <div class="me-5 d-none d-lg-block">
-          <h5 class="fw-bold">Stay Connected:</h5>
-        </div>
-
-        <div>
-          <a class="btn text-white btn-floating m-1" style="background-color: #3b5998;" href="http://www.facebook.com/sharer.php?u=http://tyrrellcounty.org/en/&title=Home" role="button"><i class="bi bi-facebook"></i></a>
-          <a class="btn text-white btn-floating m-1" style="background-color: #000000;" href="http://twitter.com/home?status=http://tyrrellcounty.org/en/&title=Home" role="button"><i class="bi bi-twitter-x"></i></a>
-          <a class="btn text-white btn-floating m-1" style="background-color: #dd4b39;" href="http://www.google.com/bookmarks/mark?op=edit&bkmk=http://tyrrellcounty.org/en/&title=" role="button"><i class="bi bi-google"></i></a>
-          <a class="btn text-white btn-floating m-1" style="background-color: #0082ca;" href="http://www.linkedin.com/shareArticle?mini=true&url=http://tyrrellcounty.org/en/&summary=%5B..%5D&source=" role="button"><i class="bi bi-linkedin"></i></a>
-        </div>
-
-      </section>
-
-      <!-- Links and Contact -->
-      <section>
-        <div class="container text-center text-md-start mt-5">
-          <div class="row mt-3">
-
-            <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
-              <h6 class="text-uppercase fw-bold mb-4">Tyrell County</h6>
-              <p>...nature's buffer zone, sprawled between the urban mainland and the popular stretch of North Carolina's Outer Banks</p>
-            </div>
-
-            <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
-              <h6 class="text-uppercase fw-bold mb-4"><a class="nav-link" href="../index.html">Home</a></h6>
-              <p><a href="payments.html" class="text-reset">Payments</a></p>
-              <p><a href="departments.html" class="text-reset">Departments</a></p>
-              <p><a href="records.html" class="text-reset">Records</a></p>
-              <p><a href="#" class="text-reset">Forms</a></p>
-              <p><a href="services.html" class="text-reset">Services</a></p>
-            </div>
-            
-            <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
-              <h6 class="text-uppercase fw-bold mb-4">Useful links</h6>
-              <p><a href="https://www.ncworks.gov/vosnet/default.aspx" target="_blank" class="text-reset">NC Works</a></p>
-              <p><a href="https://www.tyrrellrod.net/" target="_blank" class="text-reset">Register of Deeds</a></p>
-              <p><a href="https://dl.agd.cc/TyrrellWeb/approvedwaterrates2021.pdf" target="_blank" class="text-reset">Water Rates</a></p>
-            </div>
-
-            <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
-              <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
-              <p><i class="bi bi-house-fill"></i> 108 S. Water St. Columbia, NC 27925 <br> P.O. Box 449</p>
-              <p><i class="bi bi-telephone-fill"></i> (252) 796-1371</p>
-            </div>
-
-          </div>
-        </div>
-      </section>
-
-      <!-- Copyright -->
-      <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
-        © 2023 Copyright: <a class="text-reset fw-bold" href="https://tcfranklin2.wordpress.com/" target="_blank">Tyler Franklin</a>
       </div>
-  
-    </footer>
+    </nav>
+  </header>
 
-
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
-  </body>
+  <main id="main-content" tabindex="-1" class="container my-4">
+    <div class="card shadow-lg p-4 mb-4">
+      <h2 class="mb-3"><i class="bi bi-ui-checks me-2"></i>Forms & Applications</h2>
+      <p class="mb-4">Download forms and applications for Tyrrell County services, permits, and more.</p>
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item d-flex justify-content-between align-items-center">
+          <span><i class="bi bi-file-earmark-pdf text-primary me-2"></i> Solid Waste Permit Application</span>
+          <a href="http://dl.agd.cc/TyrrellWeb/solidwastepermitapp.pdf" class="btn btn-primary" target="_blank" rel="noopener">
+            <i class="bi bi-download"></i> Download
+          </a>
+        </li>
+        <li class="list-group-item d-flex justify-content-between align-items-center">
+          <span><i class="bi bi-file-earmark-pdf text-primary me-2"></i> Water/Sewer Service Application</span>
+          <a href="http://dl.agd.cc/TyrrellWeb/WaterSewerApp.pdf" class="btn btn-primary" target="_blank" rel="noopener">
+            <i class="bi bi-download"></i> Download
+          </a>
+        </li>
+        <li class="list-group-item d-flex justify-content-between align-items-center">
+          <span><i class="bi bi-file-earmark-pdf text-primary me-2"></i> Building Permit Application</span>
+          <a href="http://dl.agd.cc/TyrrellWeb/buildingpermitapp.pdf" class="btn btn-primary" target="_blank" rel="noopener">
+            <i class="bi bi-download"></i> Download
+          </a>
+        </li>
+        <li class="list-group-item d-flex justify-content-between align-items-center">
+          <span><i class="bi bi-file-earmark-pdf text-primary me-2"></i> Zoning Permit Application</span>
+          <a href="http://dl.agd.cc/TyrrellWeb/zoningpermit.pdf" class="btn btn-primary" target="_blank" rel="noopener">
+            <i class="bi bi-download"></i> Download
+          </a>
+        </li>
+        <li class="list-group-item d-flex justify-content-between align-items-center">
+          <span><i class="bi bi-file-earmark-pdf text-primary me-2"></i> Employment Application</span>
+          <a href="http://dl.agd.cc/TyrrellWeb/EmploymentApplication.pdf" class="btn btn-primary" target="_blank" rel="noopener">
+            <i class="bi bi-download"></i> Download
+          </a>
+        </li>
+      </ul>
+    </div>
+    <button id="backToTop" class="btn btn-primary back-to-top" aria-label="Back to top" title="Back to top">
+      <i class="bi bi-arrow-up"></i>
+    </button>
+  </main>
+  <section class="shadow-lg home-image-section" aria-label="Tyrrell County Offices in spring">
+    <div class="home-image"></div>
+  </section>
+  <footer class="text-center text-lg-start bg-dark text-white" role="contentinfo">
+    <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom footer-social">
+      <div class="me-5 d-none d-lg-block">
+        <h5 class="fw-bold">Stay Connected:</h5>
+      </div>
+      <div>
+        <a class="btn text-white btn-floating m-1" style="background-color: #3b5998;" href="http://www.facebook.com/sharer.php?u=http://tyrrellcounty.org/en/" aria-label="Share on Facebook" role="button">
+          <i class="bi bi-facebook"></i>
+        </a>
+        <a class="btn text-white btn-floating m-1" style="background-color: #000000;" href="http://twitter.com/home?status=http://tyrrellcounty.org/en/" aria-label="Share on Twitter" role="button">
+          <i class="bi bi-twitter-x"></i>
+        </a>
+        <a class="btn text-white btn-floating m-1" style="background-color: #dd4b39;" href="http://www.google.com/bookmarks/mark?op=edit&bkmk=http://tyrrellcounty.org/en/" aria-label="Bookmark on Google" role="button">
+          <i class="bi bi-google"></i>
+        </a>
+        <a class="btn text-white btn-floating m-1" style="background-color: #0082ca;" href="http://www.linkedin.com/shareArticle?mini=true&url=http://tyrrellcounty.org/en/" aria-label="Share on LinkedIn" role="button">
+          <i class="bi bi-linkedin"></i>
+        </a>
+      </div>
+    </section>
+    <section>
+      <div class="container text-center text-md-start mt-5">
+        <div class="row mt-3">
+          <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+            <h6 class="text-uppercase fw-bold mb-4">Tyrrell County</h6>
+            <p>...nature's buffer zone, sprawled between the urban mainland and the popular stretch of North Carolina's Outer Banks.</p>
+          </div>
+          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+            <h6 class="text-uppercase fw-bold mb-4"><a class="nav-link" href="../index.html">Home</a></h6>
+            <p><a href="payments.html" class="text-reset">Payments</a></p>
+            <p><a href="departments.html" class="text-reset">Departments</a></p>
+            <p><a href="records.html" class="text-reset">Records</a></p>
+            <p><a href="forms.html" class="text-reset">Forms</a></p>
+            <p><a href="services.html" class="text-reset">Services</a></p>
+          </div>
+          <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+            <h6 class="text-uppercase fw-bold mb-4">Useful links</h6>
+            <p><a href="https://www.ncworks.gov/vosnet/default.aspx" target="_blank" rel="noopener" class="text-reset">NC Works</a></p>
+            <p><a href="https://www.tyrrellrod.net/" target="_blank" rel="noopener" class="text-reset">Register of Deeds</a></p>
+            <p><a href="https://dl.agd.cc/TyrrellWeb/approvedwaterrates2021.pdf" target="_blank" rel="noopener" class="text-reset">Water Rates</a></p>
+          </div>
+          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+            <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
+            <p><i class="bi bi-house-fill"></i> 108 S. Water St. Columbia, NC 27925 <br> P.O. Box 449</p>
+            <p><i class="bi bi-telephone-fill"></i> (252) 796-1371</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+      © 2025 Copyright:
+      <a class="text-reset fw-bold" href="https://chase-franklin.com/" target="_blank" rel="noopener">Chase Franklin</a>
+    </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"></script>
+  <script src="../main.js"></script>
+</body>
 </html>

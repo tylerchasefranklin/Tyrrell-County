@@ -1,5 +1,6 @@
 // Fade-in animation for sections
 document.addEventListener('DOMContentLoaded', function () {
+  // Section fade-in
   const observer = new IntersectionObserver(
     (entries) => {
       entries.forEach((entry) => {
@@ -12,42 +13,64 @@ document.addEventListener('DOMContentLoaded', function () {
     { threshold: 0.15 }
   );
   document.querySelectorAll('.fade-in').forEach((el) => observer.observe(el));
-});
 
-// Back to Top functionality
-const backToTop = document.querySelector('.back-to-top');
-window.addEventListener('scroll', function () {
-  if (window.scrollY > 250) {
-    backToTop.style.display = 'block';
-  } else {
-    backToTop.style.display = 'none';
+  // Back to Top button logic
+  const backToTop = document.getElementById('backToTop') || document.querySelector('.back-to-top');
+  if (backToTop) {
+    window.addEventListener('scroll', function () {
+      if (window.scrollY > 250) {
+        backToTop.style.display = 'block';
+      } else {
+        backToTop.style.display = 'none';
+      }
+    });
+    backToTop.addEventListener('click', function () {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
   }
-});
-backToTop.addEventListener('click', function () {
-  window.scrollTo({ top: 0, behavior: 'smooth' });
-});
 
-// Mobile nav menu accessibility
-const menuToggle = document.querySelector('.menu-toggle');
-const navList = document.getElementById('main-nav-list');
-menuToggle.addEventListener('click', function () {
-  const isOpen = menuToggle.getAttribute('aria-expanded') === 'true';
-  menuToggle.setAttribute('aria-expanded', !isOpen);
-  navList.classList.toggle('open');
-  // Focus trap
-  if (!isOpen) {
-    navList.querySelector('a').focus();
-  } else {
-    menuToggle.focus();
+  // Dark mode toggle functionality
+  const darkModeToggle = document.getElementById('darkModeToggle');
+  if (darkModeToggle) {
+    const icon = darkModeToggle.querySelector('i');
+    const root = document.documentElement;
+    // Apply stored theme preference
+    if (localStorage.getItem('theme') === 'dark') {
+      root.setAttribute('data-theme', 'dark');
+      if (icon) {
+        icon.classList.remove('bi-moon');
+        icon.classList.add('bi-sun');
+      }
+    }
+    // Toggle on click
+    darkModeToggle.addEventListener('click', function () {
+      if (root.getAttribute('data-theme') === 'dark') {
+        root.removeAttribute('data-theme');
+        localStorage.setItem('theme', 'light');
+        if (icon) {
+          icon.classList.remove('bi-sun');
+          icon.classList.add('bi-moon');
+        }
+      } else {
+        root.setAttribute('data-theme', 'dark');
+        localStorage.setItem('theme', 'dark');
+        if (icon) {
+          icon.classList.remove('bi-moon');
+          icon.classList.add('bi-sun');
+        }
+      }
+    });
   }
-});
-document.addEventListener('keydown', function (e) {
-  if (
-    navList.classList.contains('open') &&
-    e.key === 'Escape'
-  ) {
-    menuToggle.setAttribute('aria-expanded', 'false');
-    navList.classList.remove('open');
-    menuToggle.focus();
+
+  // Optional: Keyboard accessibility for skip link (focus main content)
+  const skipLink = document.querySelector('.skip-link');
+  if (skipLink) {
+    skipLink.addEventListener('click', function (e) {
+      const main = document.getElementById('main-content');
+      if (main) {
+        main.setAttribute('tabindex', '-1');
+        main.focus();
+      }
+    });
   }
 });
