@@ -1,6 +1,6 @@
 # Tyrrell County Website Redesign
 
-Welcome to the source code for the redesigned [Tyrrell County, North Carolina](https://tyrrellcounty.org/) website.
+Welcome to the source code for the redesigned [Tyrrell County, North Carolina](http://tyrrellcounty.org/) website.
 
 ## 🌐 Overview
 
