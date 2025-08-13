@@ -15,10 +15,4 @@ This project aims to provide information about Tyrrell County.
 
 Follow the instructions to use this project.
 
-## Bottom Image on All Pages
-
-```html
-<img src='bottom-image.png' alt='Bottom Image'>
-```
-
-This image appears on all pages.
+(Removed the 'Bottom Image on All Pages' section as requested.)
