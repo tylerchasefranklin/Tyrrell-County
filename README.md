@@ -1,89 +1,73 @@
 # Tyrrell County Website Redesign
 
-Official site for Tyrrell County, North Carolina  
-Modern, accessible, and responsive web presence for county residents and visitors.
+Welcome to the source code for the redesigned [Tyrrell County, North Carolina](https://tyrrellcounty.org/) website.
 
-![Tyrrell County Banner](images/banner(small).png)
+## 🌐 Overview
 
----
+This project is a modern, responsive, and accessible redesign of the Tyrrell County website, built with:
 
-## Table of Contents
+- **HTML5**: Semantic, accessible markup for all pages
+- **Bootstrap 5**: For grid, navigation, and responsive layouts
+- **Bootstrap Icons**: Consistent, lightweight iconography
+- **Custom CSS**: For branding and dark/light mode support
+- **JavaScript**: For dark mode toggle, back-to-top button, and accessibility enhancements
 
-- [Overview](#overview)
-- [Features](#features)
-- [Screenshots](#screenshots)
-- [Tech Stack](#tech-stack)
-- [Accessibility](#accessibility)
-- [Getting Started](#getting-started)
-- [Project Structure](#project-structure)
-- [Contributing](#contributing)
-- [License](#license)
-- [Contact](#contact)
+## 🚀 Features
 
----
+- **Mobile-first, fully responsive design**
+- **Dark/Light mode toggle** (remembers user preference)
+- **Accessible navigation** (skip link, keyboard-friendly, ARIA roles)
+- **Consistent header and footer on all pages**
+- **"Back to Top" button**
+- **Downloadable forms and public records**
+- **Contact and department listings**
+- **Social media sharing links**
+- **Optimized for performance and modern browsers**
 
-## Overview
+## 📁 Project Structure
 
-This project is a full redesign and implementation of the official Tyrrell County (NC) website.  
-It provides residents, businesses, and visitors with easy access to county services, payments, forms, and public information.
+```
+.
+├── index.html                  # Home page
+├── styles.css                  # Main site styles (including dark mode)
+├── main.js                     # JavaScript for interactivity
+├── images/                     # Site images (banner, spring photo, favicon, etc.)
+├── pages/
+│   ├── payments.html
+│   ├── forms.html
+│   ├── records.html
+│   ├── services.html
+│   └── departments.html
+└── README.md
+```
 
-The website prioritizes accessibility, mobile-responsiveness, and a welcoming visual identity that matches Tyrrell County’s natural beauty.
+## 🛠️ How to Run Locally
 
----
+1. **Clone this repository**
+2. Open `index.html` or any subpage in your browser (no build step required)
+3. To view all features, ensure you have an internet connection for loading Bootstrap and Bootstrap Icons via CDN
 
-## Features
+## 📸 Bottom Image on All Pages
 
-- **Modern, Responsive Design:**  
-  Works seamlessly on desktop, tablet, and mobile devices.
-- **Accessible Navigation:**  
-  Semantic HTML, ARIA labels, skip links, keyboard support.
-- **County Branding:**  
-  Color palette and visuals inspired by Tyrrell County’s waterways and rural landscapes.
-- **Quick Access Buttons:**  
-  For payments, jobs, forms, GIS, and more.
-- **Integrated Search:**  
-  Site-wide search for fast information retrieval.
-- **Interactive Features:**  
-  - “Back to Top” button
-  - Light/Dark mode toggle (remembers your preference)
-  - Smooth scroll and keyboard-friendly navigation
-- **SEO & Social Ready:**  
-  Meta tags for discoverability and sharing.
-- **Contact & Social Links:**  
-  In-depth footer with contact, external resources, and social media.
+To ensure the bottom photo section displays correctly (full width, curved top corners, shadow), **add this HTML block directly after your `</main>` tag and before `<footer>` on every subpage:**
 
----
+```html
+<section class="shadow-lg home-image-section" aria-label="Tyrrell County Offices in spring">
+  <div class="home-image"></div>
+</section>
+```
 
-## Screenshots
+- **Do not nest this section inside a `.container` or `.card`**. It must be outside so it appears full width, as on the home page.
 
-> _Add screenshots or animated GIFs here (e.g., home page, mobile view, dark mode toggle, navigation dropdowns, etc.)_
+## ✨ Credits
 
----
+Website design and development by  
+[Chase Franklin](https://chase-franklin.com/)
 
-## Tech Stack
+## 📄 License
 
-- **HTML5** / **CSS3** (with CSS variables for easy theming)
-- **Bootstrap 5** + **Bootstrap Icons**
-- **Vanilla JavaScript** (`main.js`) for accessibility and interactivity
-- _No build tools required—just static files!_
-
----
-
-## Accessibility
-
-This project follows WCAG guidelines and best practices:
-
-- Semantic HTML5 structure
-- Descriptive alt text and ARIA labels
-- Keyboard navigation and visible focus states
-- High color contrast (light/dark modes)
-- Responsive layouts and readable font sizes
+This project is open source. See [LICENSE](LICENSE) for details.
 
 ---
 
-## Getting Started
-
-1. **Clone the repo:**
-   ```sh
-   git clone https://github.com/tylerchasefranklin/Tyrrell-County.git
-   cd Tyrrell-County
+*For feedback or contributions, please open an issue or pull request!*
